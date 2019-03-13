@@ -35,3 +35,7 @@ function validateInput() {
     pwd.focus();
     return false;
 }
+
+function goHome() {
+    document.location = "/";
+}

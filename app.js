@@ -34,7 +34,7 @@ app.get('/', function (req, res, next) {
 
 /* post a registration form. */
 app.post('/register', function (req, res, next) {
-  console.log(req.body);
+  console.log(req.body);  // dump a copy of incoming data
   bag = req.body;
   bag.postback = true;
   res.render('register', bag);
